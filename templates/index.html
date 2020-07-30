@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Face expression recognition</title>
+  </head>
+  <body>
+  	<h1>Facial Expression Regression</h1>
+  	<p id="main">This program will predict the facial expreesion of your face which is shown in the window below.It will predict 7 expressions:
+  		<ul>
+  			<li>Happy</li>
+  			<li>Sad</li>
+  			<li>Disgust</li>
+  			<li>Neutral</li>
+  			<li>Angry</li>
+  			<li>Fear</li>
+  			<li>Surprise</li>
+  		</ul>
+  	</p>
+    <img id="bg" width=1200px height=900px src="{{ url_for('video_feed') }}">
+  </body>
+</html>
